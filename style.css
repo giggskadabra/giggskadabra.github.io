@@ -8,7 +8,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: white;
+    background: beige;
     width: 100%;
 
 }
@@ -18,20 +18,43 @@ header {
     margin: 10px;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
-#navbar li a {
+
+#projects {
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black
+
 }
 
+#navbar li a {
+    margin: 0px 15px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+}
+
+#navbar li a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+#navbar li a:active {
+    background-color: darkslateblue;
+    color: white;
+}
 .banner-text {
     text-align: center;
 }
 
 .picbanner {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     background-color: blueviolet;
@@ -41,7 +64,6 @@ header {
 }
 
 h1 {
-    display: inline;
     text-align: center;
     font-size: 2.1em;
     color: black;
@@ -70,10 +92,6 @@ h1 {
     max-width: 800px;
     border: 5px blueviolet solid;
     background-color: yellow;
-
-
-    
-
 }
 
 .content h2 {
@@ -87,4 +105,21 @@ h1 {
     line-height: 1.5;
     color: darkslategray;
     font-family: monospace;
+}
+.content a {
+    color: blueviolet;
+    text-decoration: none;
+}
+.content a:hover {
+    text-decoration: underline;
+}
+.content a:active {
+    color: darkslateblue;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: beige;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }

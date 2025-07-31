@@ -105,6 +105,7 @@ h1 {
     line-height: 1.5;
     color: darkslategray;
     font-family: monospace;
+    padding: 10px;
 }
 .content a {
     color: blueviolet;

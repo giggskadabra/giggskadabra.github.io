@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    background-color: beige;
-    
+    background-color: beige; 
 }
 
 header {
@@ -10,7 +9,15 @@ header {
     z-index: 1;
     background: beige;
     width: 100%;
+    
+}
 
+@media (max-width: 900px) {
+    #navbar ul {
+       flex-wrap:wrap;
+       justify-content: center;
+       line-height: 2;
+    }
 }
 
 #navbar ul {
@@ -28,7 +35,6 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: black
-
 }
 
 #navbar li a {
@@ -59,8 +65,6 @@ header {
     margin-right: auto;
     background-color: blueviolet;
     padding: 20px;
-    
-
 }
 
 h1 {
@@ -70,7 +74,6 @@ h1 {
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     margin: 0px
-
 }
 
 .profile-pic {
@@ -105,7 +108,6 @@ h1 {
     line-height: 1.5;
     color: darkslategray;
     font-family: monospace;
-    padding: 10px;
 }
 .content a {
     color: blueviolet;

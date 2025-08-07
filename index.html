@@ -2,57 +2,116 @@
 <html lang="en">
 
 <head>
-  <title id="title">Paul Gilligan</title>
-  <link rel="stylesheet" href="./style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <title>Style Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav id="navbar">
-      <ul>
-        <li id="projects">Projects:</li>
-        <li><a href="https://giggskadabra.github.io/cheatsheet" target="_blank">Html Cheat Sheet</a></li>
-        <li><a href="https://giggskadabra.github.io/stylesystem" target="_blank">Style System</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="picbanner">
-    <div class="banner-text">
-      <h1>Paul Gilligan</h1>
-    </div>
-    <img src="./paul.jpg" alt="Paul Gilligan" class="profile-pic">
+    <header>
+        <div class ="header-left">
+          <h1>My website design system</h1>
+          </div>
+        <div class= "header-right">
+          <nav class="header-right">
+              <a href="#colors">Colors</a>
+              <a href="#typography">Typography</a>
+              <a href="#text-styles">Text Styles</a>
+              <a href="#buttons">Buttons</a>
+          </nav>
+        </div>
+    </header>
+    <main>
+        <section id="colors-container">
+            <h2 id="colors">Colors</h2>
+            <div class="color1-box">
+                <p>Blue Violet</p>
+                <p>#8A2EB2</p>
+            </div>
+            <div class="color2-box">
+                <p>Dark Slate Blue</p>
+                <p>#483D8B</p>
+            </div>
+            <div class="color3-box">
+                <p>Yellow</p>
+                <p>#FFFF00</p>
+            </div>
+            <div class="color4-box">
+                <p>Beige</p>
+                <p>#F5F5DC</p>
+            </div>
+        </section>
 
-  </div>
-  <main>
-    <section class="content" id="about">
-      <h2>About me</h2>
-      <p>Hello my name is Paul and i am a Beginner freelance web developer. I am passionate about creating innovative
-        solutions
-        that give a great user experience and enhance the way people interact with the web, leading to increased
-        buisness
-        and customer satisfaction. I have a background in HTML, CSS, JavaScript, and a little bit of Python.
-        I am always looking to learn new technologies and improve my skills.
-        I became interested in coding and web development when I was in school, and i am now pursuing it as a career.
-        I have worked on several projects, including this portfolio site, which showcases my skills and experience.
-      </p>
-    </section>
+            <section id="typography-container">
+                <h2 id="typography">Typography</h2>
+                <div class="font-croissant-one">
+                    <h3 class="underline">Croissant One</h3>
+                    <p class="main-text">The quick brown fox jumped over the lazy dog</p>
+                    <p class="bold-text">The quick brown fox jumped over the lazy dog</p>
+                    <p class="italic-text">The quick brown fox jumped over the lazy dog</p>
+                </div>
+                <div class="font-merriweather">
+                    <h3 class="underline">Merriweather</h3>
+                    <p class="main-text">The quick brown fox jumped over the lazy dog</p>
+                    <p class="bold-text">The quick brown fox jumped over the lazy dog</p>
+                    <p class="italic-text">The quick brown fox jumped over the lazy dog</p>
+                </div>
+                <div class="font-roboto">
+                    <h3 class="underline">Roboto</h3>
+                    <p class="main-text">The quick brown fox jumped over the lazy dog</p>
+                    <p class="bold-text">The quick brown fox jumped over the lazy dog</p>
+                    <p class="italic-text">The quick brown fox jumped over the lazy dog</p>
+                </div>
+            </section>
 
-    <section class="content" id="contact">
-      <h2>Contact me</h2>
-      <p>If you would like to get in touch, please email me at <a id="email"
-          href="mailto:giggskadabra@gmail.com">giggskadabra@gmail.com</a>
-        or connect with me on <a id="linkedin" href="https://www.linkedin.com/in/paul-gilligan-b7473878/"
-          target="_blank">LinkedIn</a>.
-        You can also find me on <a id="github" href="https://github.com/giggskadabra" target="_blank">GitHub</a> where I
-        share my projects and contributions.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Paul Gilligan. All rights reserved.</p>
-    <p>Last updated: Aug 2025</p>
+            <section id="text-styles-container">
+                <h2 id="text-styles">Text Styles</h2>
+                <div class="header-style">
+                    <h1>Header</h1>
+                    <ul>
+                        <li>Tag: H1</li>
+                        <li>Font: Merriweather</li>
+                        <li>Font size: 36px</li>
+                        <li>Font weight: 900 (bold)</li>
+                    </ul>
+                </div>
+                <div class="subheader-style">
+                    <h2>Subheader</h2>
+                    <ul>
+                        <li>Tag: H2</li>
+                        <li>Font: Croissant One</li>
+                        <li>Font size: 28px</li>
+                        <li>Font weight: 700(bold)</li>
+                    </ul>
+                </div>
+                <div class="paragraph-style">
+                    <p>Paragraph</p>
+                    <ul>
+                        <li>Tag: P</li>
+                        <li>Font: Roboto</li>
+                        <li>Font size: 18px</li>
+                        <li>Font weight: 400 (normal)</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="buttons-container">
+                <h2 id="buttons">Buttons</h2>
+                <div class="button-primary">
+                    <button class="primary-button">Primary Button</button>
+                </div>
+                <div class="button-secondary">
+                    <button class="secondary-button">Secondary Button</button>
+                </div>
+            </section>
+
+    </main>
+    <footer>
+        <p>© 2025 Paul Gilligan</p>
+        
 </body>
 
 </html>

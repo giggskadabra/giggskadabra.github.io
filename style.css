@@ -1,128 +1,233 @@
+
 body {
-    margin: 0;
+    font-family:'Courier New', Courier, monospace;
     background-color: beige; 
+    box-sizing: border-box; 
 }
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background: beige;
-    width: 100%;
-    
+    background-color: blueviolet;
+    position: relative;
+    overflow: hidden;
 }
 
-@media (max-width: 900px) {
-    #navbar ul {
-       flex-wrap:wrap;
-       justify-content: center;
-       line-height: 2;
-    }
-}
-
-#navbar ul {
-    list-style-type: none;
+.header-left {
     margin: 10px;
     padding: 10px;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    border: 2px solid black;
     display: flex;
     justify-content: left;
 }
 
-#projects {
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: black
+.header-right{
+    display: flex;
+    justify-content: right;
+    padding : 10px;
+    margin: 10px;
+}   
+
+@media (max-width: 900px) {
+    .header-left, .header-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
-#navbar li a {
-    margin: 0px 15px;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: black;
-    border: 2px solid black;
-}
-
-#navbar li a:hover {
-    background-color: blueviolet;
+.header-right a {
     color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    font-weight: bold;
 }
-#navbar li a:active {
-    background-color: darkslateblue;
-    color: white;
-}
-.banner-text {
-    text-align: center;
-}
-
-.picbanner {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: blueviolet;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.1em;
-    color: black;
-    font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0px
-}
-
-.profile-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid darkslateblue;
-}
-
-.content {
-    text-align: center;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    max-width: 800px;
-    border: 5px blueviolet solid;
-    background-color: yellow;
-}
-
-.content h2 {
-    font-size: 2em;
-    color: black;
-    font-family: Courier, monospace;
-}
-
-.content p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: darkslategray;
-    font-family: monospace;
-}
-.content a {
+.header-right a:hover {
+    background-color: white;
     color: blueviolet;
-    text-decoration: none;
 }
-.content a:hover {
+.header-right a:active {
+    color: white;
+    background-color: darkblue;
+}
+
+#colors-container {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+.color1-box{
+    background-color: blueviolet;
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    float: left;
+}
+
+.color1-box p {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.color2-box{
+    background-color: darkslateblue;
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    float: left;
+}
+
+.color2-box p {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.color3-box{
+    background-color: yellow;
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    float: left;
+}
+
+.color3-box p {
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.color4-box{
+    background-color: beige;
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    float: left;
+}
+
+.color4-box p {
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+#typography-container {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.underline {
     text-decoration: underline;
 }
-.content a:active {
-    color: darkslateblue;
+
+.font-croissant-one .main-text {
+    font-family: 'Croissant One', sans-serif;
 }
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: beige;
+
+.font-croissant-one .bold-text {
+    font-family: 'Croissant One', sans-serif;
+    font-weight: bold;
+}
+.font-croissant-one .italic-text {
+    font-family: 'Croissant One', sans-serif;
+    font-style: italic;
+}
+.font-merriweather .main-text {
+    font-family: 'Merriweather', serif;
+}
+
+.font-merriweather .bold-text {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+.font-merriweather .italic-text {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+.font-roboto .main-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-roboto .bold-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.font-roboto .italic-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+#text-styles-container {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.header-style h1{
+    font-size: 36px;
+    font-weight: 900;
+    font-family: "Merriweather", serif;
+}
+
+.subheader-style h2{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Croissant One", sans-serif;
+}
+.paragraph-style p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+#buttons-container {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.button-primary  button {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    margin: 20px;
+    font-family: 'roboto', sans-serif;
+}
+
+.button-primary button:hover {
+    background-color: darkslateblue;
+}
+.button-secondary button {
+    background-color: yellow;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    margin: 20px;
+    font-family: 'roboto', sans-serif;
+}
+
+.button-secondary button:hover {
+    background-color: beige;
 }

@@ -12,7 +12,7 @@ header {
     
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     #navbar ul {
        flex-wrap:wrap;
        justify-content: center;
@@ -126,3 +126,4 @@ footer {
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
+
